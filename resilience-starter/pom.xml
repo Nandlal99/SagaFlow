@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>4.0.3</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<groupId>com.sagaflow</groupId>
+		<artifactId>Distributed-Order-Management-System</artifactId>
+		<version>1.0.0</version>
+		<relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
+
 	<artifactId>resilience-starter</artifactId>
 	<version>1.0.0</version>
 	<name>resilience-starter</name>
@@ -30,7 +30,6 @@
 		<url/>
 	</scm>
 	<properties>
-		<java.version>17</java.version>
 		<spring-cloud.version>2025.1.0</spring-cloud.version>
 	</properties>
 	<dependencies>

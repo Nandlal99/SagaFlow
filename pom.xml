@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.example</groupId>
+    <groupId>com.sagaflow</groupId>
     <artifactId>Distributed-Order-Management-System</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -19,10 +19,12 @@
         <module>order-service</module>
         <module>inventory-service</module>
         <module>payment-service</module>
+        <module>common-security</module>
+        <module>auth-service</module>
     </modules>
 
     <properties>
-        <java.version>17</java.version>
+        <java.version>21</java.version>
         <spring-cloud.version>2025.1.0</spring-cloud.version>
     </properties>
 

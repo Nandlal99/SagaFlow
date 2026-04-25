@@ -21,7 +21,7 @@ public class Order {
     private Integer quantity;
     private Double price;
     private String status; // e.g., PENDING, CONFIRMED, CANCELLED
-
+    private String email;
     private LocalDateTime createdAt;
 
     @PrePersist

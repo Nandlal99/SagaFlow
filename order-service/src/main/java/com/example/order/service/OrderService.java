@@ -23,12 +23,13 @@ public class OrderService {
     private final ObjectMapper objectMapper;
 
     @Transactional
-    public Order placedOrder(OrderRequest request) throws JsonProcessingException {
+    public Order placedOrder(OrderRequest request, String email) throws JsonProcessingException {
         // 1. Save the actual order
         Order order = new Order();
         order.setProductId(request.getProductId());
         order.setPrice(request.getPrice());
         order.setQuantity(request.getQuantity());
+        order.setEmail(email);
         order.setStatus("PENDING");
         Order savedOrder = orderRepository.save(order);
 
